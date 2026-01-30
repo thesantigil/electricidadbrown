@@ -205,34 +205,24 @@
     </div>
 
     <!-- COLUMNA DERECHA: FORM -->
-    <form action="https://formsubmit.co/serviciosintegralesbrown@gmail.com" method="POST"
-      class="bg-gradient-to-r from-dark to-gray-900 p-6 md:p-8 rounded-2xl shadow space-y-4">
+<form action="https://formsubmit.co/serviciosintegralesbrown@gmail.com" method="POST"
+  class="bg-gradient-to-r from-dark to-gray-900 p-6 md:p-8 rounded-2xl shadow space-y-4">
 
-      <h3 class="text-3xl font-bold text-primary">Escribinos ⚡</h3>
+  <h3 class="text-3xl font-bold text-primary">Escribinos ⚡</h3>
 
-      <input type="text" name="nombre" placeholder="Nombre" required
-        class="w-full p-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary"/>
+  <input type="text" name="nombre" placeholder="Nombre" required>
+  <input type="email" name="email" placeholder="Email" required>
+  <input type="tel" name="telefono" placeholder="Teléfono" required>
+  <textarea name="mensaje" placeholder="Mensaje" rows="4" required></textarea>
 
-      <input type="email" name="email" placeholder="Email" required
-        class="w-full p-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary"/>
+  <input type="hidden" name="_subject" value="Nuevo mensaje desde la web">
+  <input type="hidden" name="_replyto" value="%email%">
+  <input type="hidden" name="_captcha" value="false">
 
-      <input type="tel" name="telefono" placeholder="Teléfono" required
-        class="w-full p-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary"/>
+  <button type="submit">Enviar mensaje</button>
+</form>
 
-      <textarea name="mensaje" placeholder="Mensaje" rows="4" required
-        class="w-full p-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
 
-      <input type="hidden" name="_subject" value="Nuevo mensaje desde la web">
-      <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_captcha" value="false">
-
-      <button type="submit"
-        class="w-full bg-yellow-800 text-white py-3 rounded-xl hover:bg-primary hover:text-dark transition font-semibold">
-        Enviar mensaje
-      </button>
-    </form>
-
-  </div>
 </section>
   
   <script>
