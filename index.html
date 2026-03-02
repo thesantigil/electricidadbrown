@@ -26,7 +26,7 @@
 
 <body class="bg-gray-100 text-gray-800">
   
-<header class="bg-gradient-to-tl from-black via-black bg-sky-900 text-white fixed w-full z-50">
+<header class="text-white fixed w-full z-50">
   <div class="max-w-7xl mx-auto px-10 py-4 flex justify-between items-center">
     <h1 class="text-xl font-bold">⚡ E.S.I.B</h1>
 
@@ -48,14 +48,37 @@
   </nav>
 </header>
 
-<section id="herramientas" style="background-image: url('media/erikymaquina.webp'); background-size: contain; background-position: right; background-repeat: no-repeat;" class="pt-32 pb-20 p-8 relative bg-black bg-right scroll-mt-32">
-  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+<section id="herramientas" class="pt-32 pb-20 p-8 relative bg-black scroll-mt-32 overflow-hidden">
+  <!-- Video de fondo -->
+  <video 
+    autoplay 
+    muted 
+    loop 
+    playsinline
+    class="absolute top-0 left-0 w-full h-full object-cover"
+  >
+    <source src="media/0302.mp4" type="video/mp4">
+  </video>
+
+  <!-- Capa oscura para que el texto se vea bien -->
+  <div class="absolute inset-0 bg-black/60"></div>
+
+  <!-- Contenido -->
+  <div class="relative max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center z-10">
     <div>
-      <h2 class="text-4xl md:text-5xl text-white font-bold mb-6">Excavaciones y Servicios Integrales <span class="text-sky-700">'Brown</span></h2>
-      <p class="text-gray-300 mb-6 font-serif"> Soluciones en excavación y canalizaciones para obras en zonas urbanas/rurales.</p>
-      <a href="#contacto" class="inline-block bg-sky-500 text-dark px-6 py-3 rounded-xl font-semibold hover:scale-105 transition">Solicitar presupuesto</a>
+      <h2 class="text-4xl md:text-5xl text-white font-bold mb-6">
+        Excavaciones y Servicios Integrales 
+        <span class="text-sky-700">'Brown</span>
+      </h2>
+      <p class="text-gray-300 mb-6 font-serif">
+        Soluciones en excavación y canalizaciones para obras en zonas urbanas/rurales.
+      </p>
+      <a href="#contacto" class="inline-block bg-sky-500 text-dark px-6 py-3 rounded-xl font-semibold hover:scale-105 transition">
+        Solicitar presupuesto
+      </a>
     </div>
   </div>
+
 </section>
 
 <section id="servicios" style="background-image: url(media/maquinauno.webp); background-size: auto; background-position: center; background-repeat: no-repeat;" class="py-10 bg-white scroll-mt-32">
